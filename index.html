@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIA Solutions — Consultoría de Software</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ───── NAVBAR ───── -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⬡</span>
+        <span>BIA <strong>Solutions</strong></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">Nosotros</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portafolio</a>
+        <a href="#technologies">Tecnologías</a>
+        <a href="#contact" class="btn btn-nav">Contáctanos</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ───── HERO ───── -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content container">
+      <div class="hero-badge">💼 Asesoría profesional para tu proyecto digital</div>
+      <h1 class="hero-title">
+        Construimos Software<br />
+        <span class="gradient-text">Con Calidad y Compromiso</span>
+      </h1>
+      <p class="hero-subtitle">
+        Desde la idea hasta el producto final — te asesoramos, acompañamos cada etapa del proceso
+        y garantizamos calidad en cada entrega.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Iniciar un Proyecto</a>
+        <a href="#portfolio" class="btn btn-ghost">Ver Nuestro Trabajo</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span>%</span><p>Compromiso</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="9">0</span><span></span><p>Servicios</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="24">0</span><span>h</span><p>Respuesta</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-target="100">0</span><span>%</span><p>Calidad Garantizada</p></div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ───── ABOUT ───── -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-card card-float">
+          <div class="card-icon">💡</div>
+          <h4>Innovación ante Todo</h4>
+          <p>Rompemos límites con tecnologías de vanguardia.</p>
+        </div>
+        <div class="about-card card-float delay-1">
+          <div class="card-icon">🤝</div>
+          <h4>Acompañamiento Real</h4>
+          <p>Estamos contigo en cada etapa, desde el primer boceto hasta el lanzamiento.</p>
+        </div>
+        <div class="about-card card-float delay-2">
+          <div class="card-icon">✅</div>
+          <h4>Calidad Garantizada</h4>
+          <p>Nos comprometemos con la calidad del proceso y del producto final.</p>
+        </div>
+        <div class="about-blob"></div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-label">Sobre BIA Solutions</div>
+        <h2 class="section-title">Una Consultora<br /><span class="gradient-text">Construida para la Era Digital</span></h2>
+        <p>Somos un equipo apasionado por la tecnología, comprometido con brindar asesoría profesional y acompañar a nuestros clientes en cada etapa de su proyecto de software — desde la idea inicial hasta el producto final en producción.</p>
+        <p>No solo desarrollamos soluciones: nos involucramos de verdad, entendemos tu negocio y garantizamos calidad en cada proceso y entrega. Tu tranquilidad es nuestra responsabilidad.</p>
+        <ul class="about-checklist">
+          <li><span class="check">✓</span> Asesoría profesional desde el primer día</li>
+          <li><span class="check">✓</span> Acompañamiento completo: diseño, desarrollo y despliegue</li>
+          <li><span class="check">✓</span> Comunicación transparente y reportes constantes</li>
+          <li><span class="check">✓</span> Garantía de calidad en el proceso y el producto final</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Trabaja con Nosotros</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── SERVICES ───── -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Qué Hacemos</div>
+        <h2 class="section-title">Nuestros <span class="gradient-text">Servicios</span></h2>
+        <p class="section-subtitle">Soluciones de software de extremo a extremo, adaptadas a tu industria y etapa de crecimiento.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">🛠️</div>
+          <h3>Desarrollo de Software a Medida</h3>
+          <p>Aplicaciones personalizadas construidas en torno a tus flujos de trabajo, integraciones y hoja de ruta futura.</p>
+          <span class="service-tag">Full-Stack</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3>Desarrollo de Aplicaciones Web</h3>
+          <p>Apps web modernas y de alto rendimiento con React, Next.js y Vue — diseñadas para convertir y fidelizar usuarios.</p>
+          <span class="service-tag">Frontend · Backend</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔗</div>
+          <h3>Desarrollo de APIs e Integraciones</h3>
+          <p>APIs RESTful y GraphQL robustas. Integraciones con CRMs, ERPs, pasarelas de pago y servicios de terceros.</p>
+          <span class="service-tag">API · Integraciones</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🤖</div>
+          <h3>Automatización RPA</h3>
+          <p>Automatiza tareas repetitivas y procesos de negocio con herramientas como UiPath, Power Automate y bots personalizados.</p>
+          <span class="service-tag">RPA · Automatización</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">☁️</div>
+          <h3>Consultoría Cloud y DevOps</h3>
+          <p>Arquitecturas escalables y seguras en AWS, Azure y GCP. Pipelines CI/CD, IaC y monitoreo en tiempo real.</p>
+          <span class="service-tag">AWS · Azure · GCP</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📊</div>
+          <h3>Analítica de Datos y Dashboards</h3>
+          <p>Transforma datos crudos en insights estratégicos. Dashboards BI personalizados, pipelines de datos y reportes.</p>
+          <span class="service-tag">BI · Analítica</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">♻️</div>
+          <h3>Modernización de Software</h3>
+          <p>Migra sistemas legados a arquitecturas modernas. Mejora el rendimiento, la seguridad y la mantenibilidad.</p>
+          <span class="service-tag">Legado → Moderno</span>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🛡️</div>
+          <h3>Mantenimiento y Soporte</h3>
+          <p>Monitoreo continuo, corrección de errores, actualizaciones y soporte con SLA para tus sistemas críticos.</p>
+          <span class="service-tag">Soporte 24/7</span>
+        </div>
+
+        <div class="service-card reveal service-card-featured">
+          <div class="service-icon">🚀</div>
+          <h3>Desarrollo de MVP para Startups</h3>
+          <p>Lanza más rápido e inteligente. Ayudamos a startups a validar ideas con MVPs listos para inversores en 6–10 semanas.</p>
+          <span class="service-tag">Startups · MVP</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PORTFOLIO ───── -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Nuestro Trabajo</div>
+        <h2 class="section-title">Proyectos <span class="gradient-text">Destacados</span></h2>
+        <p class="section-subtitle">Una muestra de las soluciones que hemos entregado en distintas industrias.</p>
+      </div>
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Apps Web</button>
+        <button class="filter-btn" data-filter="data">Datos y Analítica</button>
+        <button class="filter-btn" data-filter="automation">Automatización</button>
+        <button class="filter-btn" data-filter="cloud">Cloud</button>
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-card reveal" data-category="web">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#6366f1,#8b5cf6)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">App Web</span>
+              <h3>FinFlow — Plataforma Financiera</h3>
+              <p>Sistema de gestión financiera para pymes con soporte multi-moneda, reportes automatizados y panel de control en tiempo real.</p>
+              <div class="portfolio-tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            </div>
+            <div class="portfolio-icon-large">💳</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="data">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#0ea5e9,#06b6d4)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Datos y Analítica</span>
+              <h3>RetailVision Dashboard</h3>
+              <p>Dashboard BI interactivo para cadenas minoristas con visualización de ventas, inventario y métricas clave en tiempo real.</p>
+              <div class="portfolio-tags"><span>Python</span><span>Power BI</span><span>Snowflake</span></div>
+            </div>
+            <div class="portfolio-icon-large">📈</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="automation">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#10b981,#059669)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Automatización RPA</span>
+              <h3>LogisticBot — RPA Cadena de Suministro</h3>
+              <p>Automatización del procesamiento de facturas, actualización de inventarios y conciliación con proveedores, reduciendo tiempos operativos.</p>
+              <div class="portfolio-tags"><span>UiPath</span><span>Python</span><span>SAP</span></div>
+            </div>
+            <div class="portfolio-icon-large">🤖</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="cloud">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">Cloud y DevOps</span>
+              <h3>HealthGrid — Migración a la Nube</h3>
+              <p>Migración de sistema de gestión hospitalaria a AWS con arquitectura escalable, segura y de alta disponibilidad.</p>
+              <div class="portfolio-tags"><span>AWS</span><span>Terraform</span><span>Docker</span></div>
+            </div>
+            <div class="portfolio-icon-large">🏥</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="web">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#ec4899,#f43f5e)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">MVP · Startup</span>
+              <h3>ShopSync — MVP E-commerce</h3>
+              <p>Plataforma e-commerce headless desarrollada como MVP para una startup, lista para lanzar y escalar desde el primer día.</p>
+              <div class="portfolio-tags"><span>Next.js</span><span>Stripe</span><span>Vercel</span></div>
+            </div>
+            <div class="portfolio-icon-large">🛍️</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-category="data">
+          <div class="portfolio-img" style="background: linear-gradient(135deg,#8b5cf6,#6366f1)">
+            <div class="portfolio-overlay">
+              <span class="portfolio-badge">API · Integraciones</span>
+              <h3>ConnectHub — API Gateway</h3>
+              <p>Capa unificada de APIs que integra múltiples sistemas empresariales, simplificando la comunicación entre plataformas.</p>
+              <div class="portfolio-tags"><span>GraphQL</span><span>Kong</span><span>Redis</span></div>
+            </div>
+            <div class="portfolio-icon-large">🔗</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── TECHNOLOGIES ───── -->
+  <section class="technologies section" id="technologies">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Nuestro Stack</div>
+        <h2 class="section-title">Tecnologías que <span class="gradient-text">Dominamos</span></h2>
+        <p class="section-subtitle">Elegimos la herramienta correcta para cada trabajo — esto es lo que usamos a diario.</p>
+      </div>
+      <div class="tech-categories">
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Frontend</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">Next.js</span>
+            <span class="tech-pill">Vue.js</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Backend</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">Node.js</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">Java</span>
+            <span class="tech-pill">Go</span>
+            <span class="tech-pill">FastAPI</span>
+          </div>
+        </div>
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Nube y DevOps</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">AWS</span>
+            <span class="tech-pill">Azure</span>
+            <span class="tech-pill">GCP</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">Kubernetes</span>
+            <span class="tech-pill">Terraform</span>
+            <span class="tech-pill">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Datos e IA</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">MongoDB</span>
+            <span class="tech-pill">Snowflake</span>
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Spark</span>
+            <span class="tech-pill">OpenAI</span>
+          </div>
+        </div>
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Automatización</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">UiPath</span>
+            <span class="tech-pill">Power Automate</span>
+            <span class="tech-pill">Selenium</span>
+            <span class="tech-pill">Playwright</span>
+            <span class="tech-pill">n8n</span>
+          </div>
+        </div>
+
+        <div class="tech-category reveal">
+          <h4 class="tech-cat-label">Móvil</h4>
+          <div class="tech-pills">
+            <span class="tech-pill">React Native</span>
+            <span class="tech-pill">Flutter</span>
+            <span class="tech-pill">iOS</span>
+            <span class="tech-pill">Android</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CTA STRIP ───── -->
+  <section class="cta-strip">
+    <div class="container cta-inner">
+      <div class="cta-text reveal">
+        <h2>¿Listo para Construir Algo <span class="gradient-text">con Calidad?</span></h2>
+        <p>Cuéntanos tu proyecto. Te asesoramos sin compromiso y con total transparencia.</p>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-lg reveal">Agenda una Consultoría Gratis</a>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-label">Hablemos</div>
+        <h2 class="section-title">Comencemos tu<br /><span class="gradient-text">Proyecto Juntos</span></h2>
+        <p>Cuéntanos tu idea o desafío. Te brindamos asesoría profesional y te acompañamos en todo el camino hacia un producto de calidad.</p>
+        <ul class="contact-details">
+          <li>
+            <div class="contact-icon">📧</div>
+            <div><strong>Correo</strong><br /><a href="mailto:lopera787@gmail.com">lopera787@gmail.com</a></div>
+          </li>
+          <li>
+            <div class="contact-icon">📞</div>
+            <div><strong>Celular</strong><br /><a href="tel:+573024315055">302 431 5055</a></div>
+          </li>
+          <li>
+            <div class="contact-icon">📍</div>
+            <div><strong>Ubicación</strong><br />Medellín, Colombia</div>
+          </li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+          <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+          <a href="#" class="social-link" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Nombre *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Juan" required />
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Apellido *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Pérez" required />
+              <span class="form-error"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" name="email" placeholder="juan@empresa.com" required />
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">Empresa</label>
+            <input type="text" id="company" name="company" placeholder="Mi Empresa S.A." />
+          </div>
+          <div class="form-group">
+            <label for="service">Servicio de Interés</label>
+            <select id="service" name="service">
+              <option value="">Selecciona un servicio…</option>
+              <option>Desarrollo de Software a Medida</option>
+              <option>Desarrollo de Aplicaciones Web</option>
+              <option>Desarrollo de APIs e Integraciones</option>
+              <option>Automatización RPA</option>
+              <option>Consultoría Cloud y DevOps</option>
+              <option>Analítica de Datos y Dashboards</option>
+              <option>Modernización de Software</option>
+              <option>Mantenimiento y Soporte</option>
+              <option>Desarrollo de MVP para Startups</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Cuéntanos Sobre tu Proyecto *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe tu proyecto, objetivos, tiempos y presupuesto (si lo tienes)…" required></textarea>
+            <span class="form-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Enviar Mensaje</span>
+            <span class="btn-loader" hidden>Enviando…</span>
+          </button>
+          <p class="form-note">🔒 Tu información es 100% privada y nunca será compartida.</p>
+          <div class="form-success" id="formSuccess" hidden>
+            <span>✅</span>
+            <p>¡Gracias! Nos pondremos en contacto en menos de 24 horas.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">⬡</span>
+          <span>BIA <strong>Solutions</strong></span>
+        </a>
+        <p>Asesoría profesional en software,<br />acompañándote en cada etapa.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Empresa</h5>
+          <a href="#about">Nosotros</a>
+          <a href="#services">Servicios</a>
+          <a href="#portfolio">Portafolio</a>
+          <a href="#contact">Contacto</a>
+        </div>
+        <div class="footer-col">
+          <h5>Servicios</h5>
+          <a href="#services">Software a Medida</a>
+          <a href="#services">Apps Web</a>
+          <a href="#services">Cloud y DevOps</a>
+          <a href="#services">Automatización RPA</a>
+        </div>
+        <div class="footer-col">
+          <h5>Conecta</h5>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">GitHub</a>
+          <a href="mailto:lopera787@gmail.com">lopera787@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 BIA Solutions — Consultoría de Software. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
