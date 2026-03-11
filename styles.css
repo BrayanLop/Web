@@ -146,6 +146,11 @@ body {
   text-decoration: none;
   letter-spacing: -.02em;
 }
+.logo-img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
 .logo-icon { font-size: 1.5rem; color: var(--clr-primary); }
 .logo strong { color: var(--clr-primary-h); }
 

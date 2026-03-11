@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <!-- Hexagon background -->
+  <polygon
+    points="16,1 29,8.5 29,23.5 16,31 3,23.5 3,8.5"
+    fill="#0d1322"
+    stroke="url(#g)"
+    stroke-width="1.5"
+  />
+  <!-- BIA letters -->
+  <text
+    x="16" y="21"
+    text-anchor="middle"
+    font-family="Arial, sans-serif"
+    font-weight="900"
+    font-size="13"
+    letter-spacing="0.5"
+    fill="url(#g)"
+  >BIA</text>
+</svg>

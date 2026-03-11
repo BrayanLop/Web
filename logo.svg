@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="hexGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Outer hexagon (dark bg) -->
+  <polygon
+    points="100,8 182,53 182,147 100,192 18,147 18,53"
+    fill="#0d1322"
+    stroke="url(#hexGrad)"
+    stroke-width="3"
+  />
+
+  <!-- Inner hexagon (accent fill) -->
+  <polygon
+    points="100,22 170,62 170,138 100,178 30,138 30,62"
+    fill="url(#hexGrad)"
+    opacity="0.12"
+  />
+
+  <!-- Decorative corner lines -->
+  <polygon
+    points="100,22 170,62 170,138 100,178 30,138 30,62"
+    fill="none"
+    stroke="url(#hexGrad)"
+    stroke-width="1"
+    opacity="0.35"
+  />
+
+  <!-- BIA Text -->
+  <text
+    x="100"
+    y="115"
+    text-anchor="middle"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-weight="800"
+    font-size="52"
+    letter-spacing="4"
+    fill="url(#hexGrad)"
+    filter="url(#glow)"
+  >BIA</text>
+
+  <!-- Divider line -->
+  <line x1="52" y1="128" x2="148" y2="128" stroke="url(#hexGrad)" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- SOLUTIONS subtext -->
+  <text
+    x="100"
+    y="148"
+    text-anchor="middle"
+    font-family="'Segoe UI', Arial, sans-serif"
+    font-weight="400"
+    font-size="14"
+    letter-spacing="5"
+    fill="#94a3b8"
+  >SOLUTIONS</text>
+</svg>
